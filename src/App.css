@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.x-axis text {
+  fill: lightgrey;
+  transform: translateX(1.5em);
+  font-size: 0.8rem;
+}
+
+.y-axis text {
+  fill: lightgrey;
+  transform: translateY(-0.2em);
+  font-size: 0.8rem;
+}
+
+.y-axis line {
+  stroke: #e6e6e6;
+  stroke-dasharray: 2;
+}
+
+.bars g {
+  animation: Spring 0.4s forwards;
+  animation-delay: 1s;
+  transform-origin: bottom;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.bars g:hover {
+  opacity: 1;
+}
+
+text {
+  font-family: Futura, sans-serif;
+  fill: gray;
+}
+
+.circles circle {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.35));
+}
+
+svg {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.moon-shadow {
+  filter: none !important;
+}
